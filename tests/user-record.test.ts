@@ -1,10 +1,5 @@
-const defaultUser = {
-    login: 'Test login',
-    pwd: 'a^&s2JH4bnd',
-    email: 'test@email.com',
-    name: 'Test name',
-    surname: 'Test surname',
-};
+// Tests for UserRecord (generating new record and validating data)
+import {defaultUser} from "./data/default-user";
 
 test('Can build UserRecord', () => {
     const user = new UserRecord(defaultUser);
